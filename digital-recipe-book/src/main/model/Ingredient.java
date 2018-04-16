@@ -14,6 +14,7 @@ public class Ingredient {
     String name;
     String img; //Temporary, Filepath, File for adding images to the ingredient
     public Ingredient(String name){
+        //Basic Constructor
         this.name=name;
     }
     public void getFileName(){
@@ -23,4 +24,9 @@ public class Ingredient {
         Scanner sc= new Scanner(System.in);
         img=sc.next();
 }
+    public void ChangeIngredientName(String new_name){
+        //This function allows the user to replace the name of the ingredient. The controller specifies what the new name is.
+        name=new_name;
+    }
+    
 }
