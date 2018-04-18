@@ -29,4 +29,9 @@ public class Ingredient {
         name=new_name;
     }
     
+    public void ChangeImage(String new_img){
+        //This functiona allows the user to replace the file of the current image. 
+        img=new_img;
+    }
+    
 }
